@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trys Nuotraukos</title>
+    <script src="popup.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+</head>
+
+<body>
+    <section class="photos">
+        <div class="container">
+            <h1>Nuotraukų ekspozicija</h1>
+            <p class="p1">
+                Žemiau yra trijų nuotraukų ekspozicija, skirta, trečios pamokos namų darbams atlikti. Nuotraukos
+                pasirinktos atsitiktinai. Dėmesys kreiptas į suderinamumą tarpusavyje.
+            </p>
+            <div class="wrapper">
+                <div class="photo">
+                    <img id="bananas" src="bananas.jpeg" alt="Višuje matote bananą baltame fone.">
+                    <p>Višuje matote bananą baltame fone.</p>
+                </div>
+                <div class="photo">
+                    <img id="knyga" src="knyga.jpeg" alt="Višuje matote knygą melyname fone.">
+                    <p>Višuje matote knygą melyname fone.</p>
+                </div>
+                <div class="photo">
+                    <img id="fotoaparatas" src="fotoaparatas.jpeg" alt="Višuje matote fotoaparatą rožiniame fone.">
+                    <p>Višuje matote fotoaparatą rožiniame fone.</p>
+                </div>
+
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+    </section>
+</body>
+
+</html>

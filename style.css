@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #999;
+}
+.photos{
+    text-align: center;
+}
+.container h1{
+    font-size: 50px;
+    font-weight: 100;
+    padding-bottom: 30px;
+}
+.container .p1{
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 50px;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+}
+.photos .wrapper{
+    display: flex;  
+    justify-content: space-between;
+}
+img{
+    max-width: 100%;
+}
+.photo:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.photos .photo{
+    width: 30%;
+    line-height: 2;   
+}
+.wrapper p{
+    font-weight: 100;
+}
+#bananas {
+    cursor: pointer;
+    transition: 0.3s;
+}
+#bananas:hover {opacity: 0.7;}
+#knyga {
+    cursor: pointer;
+    transition: 0.3s;
+}
+#knyga:hover {opacity: 0.7;}
+#fotoaparatas {
+    cursor: pointer;
+    transition: 0.3s;
+}
+#fotoaparatas:hover {opacity: 0.7;}
+.modal {
+    display: none;
+    position: fixed; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0, 0, 0, 0.452);
+}
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
